@@ -13,7 +13,7 @@ The Kids' Pocket Money Tracker is a JavaScript application that tracks a child's
 To use this application, simply download or clone the repository from GitHub:
 
 ```bash
-git clone https://github.com/Freebo3110/child-pocket.git
+git clone https://github.com/Freebo3110/child.git
 ```
 
 Once downloaded, open `index.html` in your web browser to start using the application.
