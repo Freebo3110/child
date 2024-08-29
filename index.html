@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <h1>Карманные деньги на месяц😎</h1>
+        <form>
+            <p>Общая сумма💰</p>
+            <span>$
+                <input type="text" id="bill" placeholder="Сумма">
+            </span>
+            <p>Дней в месяце</p>
+            <span>
+                <input type="text" id="day" placeholder="Сколько дней?">
+            </span>
+            <p>💗Как ты себя вёл?💗</p>
+            <button id="addTip">Приз!</button>
+            <select id="tip">
+                <option disabled>Select an option</option>
+                <option value="0.30">Идеал! 30%💗</option>
+                <option value="0.20">Почти продержался 20% 💙</option>
+                <option value="0.10">Эх, было пару залетов 10% 🙂</option>
+                <option value="0.00" selected>Снова звонил директор школы🙅‍</option>
+            </select>
+            <button id="btn">Подведем итоги</button>
+        </form>
+        <div id="showTotalAmountToPay">
+            <div id="billSplit">
+                <p>База</p>
+                <span>$</span>
+                <span id="dividedBill"></span>
+                <span>в день</span>
+            </div>
+            <div id="totalTip">
+                <p>Приз</p>
+                <span>$</span>
+                <span id="dividedTip"></span>
+                <span>в день</span>
+            </div>
+            <div id="totalAmount">
+                <p>Всего</p>
+                <span>$</span>
+                <span id="billAndTip"></span>
+                <span>в день</span>
+            </div>
+        </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="script.js"></script>
+</body>
+</html>
